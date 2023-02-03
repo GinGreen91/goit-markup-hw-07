@@ -41,14 +41,15 @@ img {
 	display: block;
 }
 
-.container {
+/* .container {
 	max-width: 1158px;
 	padding: 0 15px;
 	margin: 0 auto;
-}
+} */
 
 .section {
-	padding: 120px 0;
+	/* padding: 120px 0; */
+	padding: 96px 0;
 }
 
 button {
@@ -325,6 +326,7 @@ button {
 	}
 	.header-navigation {
 		display: flex;
+		margin-left: 123px;
 	}
 	.header-contacts {
 		display: flex;
@@ -435,18 +437,24 @@ button {
 }
 /*------------------- ХОВАНКА ----------------*/
 
+/* .features-container {
+	max-width: 100%;
+} */
+
 .features-list,
 .activities-list,
 .team-list,
 .header-navigation-list {
 	display: flex;
 	list-style-type: none;
+	flex-wrap: wrap;
 }
 
 .features-icon {
 	margin: 24px 102px;
 }
 .features-image {
+	display: none;
 	width: 264px;
 	height: 110px;
 	background: #f4f4fd;
@@ -454,7 +462,8 @@ button {
 }
 
 .features-list {
-	gap: 24px;
+	gap: 72px 24px;
+	max-width: 100%;
 }
 
 .section-activities {
@@ -479,10 +488,16 @@ button {
 }
 
 .features-subtitle {
-	margin-top: 8px;
+	/* margin-top: 8px; */
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.11;
+	text-transform: capitalize;
+	text-align: center;
 }
 .features-item {
-	width: 264px;
+	/* width: 264px; */
+	width: 100%;
 }
 
 .subtitle-description,
