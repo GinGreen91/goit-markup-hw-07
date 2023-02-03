@@ -101,6 +101,7 @@ button {
 .header-container {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .header-logo {
@@ -120,6 +121,7 @@ button {
 }
 
 .header-navigation {
+	display: none;
 	margin-left: 77px;
 }
 
@@ -136,7 +138,7 @@ button {
 }
 
 .header-contacts {
-	display: flex;
+	display: none;
 	gap: 40px;
 	margin-left: auto;
 	padding: 24px 0 28px;
@@ -184,6 +186,7 @@ button {
 	background: none;
 	border: none;
 	cursor: pointer;
+	margin-left: auto;
 }
 
 .mobile-menu {
@@ -277,7 +280,6 @@ button {
 	align-items: center;
 	justify-content: center;
 	background-color: #4d5ae5;
-	fill: #f4f4fd;
 	border-radius: 50%;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -313,6 +315,16 @@ button {
 	.mobile-menu-contacts-mail {
 		margin-bottom: 24px;
 	}
+}
+
+@media screen and (min-width: 768px) {
+	.header-navigation {
+		display: flex;
+	}
+	.header-contacts{display: flex;}
+}
+
+@media screen and (min-width: 1200px) {
 }
 
 /*------------------MAIN STUDIO PAGE------------------*/
@@ -386,7 +398,7 @@ button {
 	list-style-type: none;
 }
 
-.icon {
+.features-icon {
 	margin: 24px 102px;
 }
 .features-image {

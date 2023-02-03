@@ -25,12 +25,12 @@
 					<span class="header-logo-web">WEB</span>
 					STUDIO
 				</a>
+				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg class="icon" width="32" height="22">
+						<use href="./image/icons.svg#icon-hamburger"></use>
+					</svg>
+				</button>
 				<nav class="header-navigation">
-					<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-						<svg class="icon" width="32" height="22">
-							<use href="./image/icons.svg#icon-hamburger"></use>
-						</svg>
-					</button>
 					<ul class="header-navigation-list">
 						<li class="header-navigation-item">
 							<a class="header-navigation-link current" href="./index.html">Studio</a>
@@ -64,7 +64,7 @@
 					<ul class="features-list">
 						<li class="features-item">
 							<div class="features-image">
-								<svg class="icon" width="64" height="64">
+								<svg class="features-icon" width="64" height="64">
 									<use href="./image/icons.svg#icon-antenna_icon"></use>
 								</svg>
 							</div>
@@ -75,7 +75,7 @@
 						</li>
 						<li class="features-item">
 							<div class="features-image">
-								<svg class="icon" width="64" height="64">
+								<svg class="features-icon" width="64" height="64">
 									<use href="./image/icons.svg#icon-clock_icon"></use>
 								</svg>
 							</div>
@@ -86,7 +86,7 @@
 						</li>
 						<li class="features-item">
 							<div class="features-image">
-								<svg class="icon" width="64" height="64">
+								<svg class="features-icon" width="64" height="64">
 									<use href="./image/icons.svg#icon-diagram_icon"></use>
 								</svg>
 							</div>
@@ -97,7 +97,7 @@
 						</li>
 						<li class="features-item">
 							<div class="features-image">
-								<svg class="icon" width="64" height="64">
+								<svg class="features-icon" width="64" height="64">
 									<use href="./image/icons.svg#icon-astronaut_icon"></use>
 								</svg>
 							</div>
@@ -415,29 +415,29 @@
 					<a class="mobile-menu-contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
 					<ul class="mobile-menu-social-links">
 						<li class="mobile-menu-link-item">
-							<a href="#" rel="noreferrer nofollow" target="_blank">
-								<svg class="icon" width="16" height="16">
+							<a href="#">
+								<svg class="icon" width="24" height="24">
 									<use href="./image/icons.svg#icon-instagram_icon"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="mobile-menu-link-item">
-							<a href="#" rel="noreferrer nofollow" target="_blank">
-								<svg class="icon" width="16" height="16">
+							<a href="#">
+								<svg class="icon" width="24" height="24">
 									<use href="./image/icons.svg#icon-twitter_icon"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="mobile-menu-link-item">
-							<a href="#" rel="noreferrer nofollow" target="_blank">
-								<svg class="icon" width="16" height="16">
+							<a href="#">
+								<svg class="icon" width="24" height="24">
 									<use href="./image/icons.svg#icon-facebook_icon"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="mobile-menu-link-item">
-							<a href="#" rel="noreferrer nofollow" target="_blank">
-								<svg class="icon" width="16" height="16">
+							<a href="#">
+								<svg class="icon" width="24" height="24">
 									<use href="./image/icons.svg#icon-linkedin_icon"></use>
 								</svg>
 							</a>
@@ -518,6 +518,12 @@
 			</div>
 		</div>
 		<!-- вікно бекдроп кінець -->
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
 		<script defer src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
