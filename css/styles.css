@@ -342,10 +342,10 @@ button {
 		max-width: 1128px;
 	}
 	.header-contacts {
-        flex-direction: row;
-        gap: 40px;
+		flex-direction: row;
+		gap: 40px;
 		padding: 24px 0 28px;
-    }
+	}
 }
 
 /*------------------MAIN STUDIO PAGE------------------*/
@@ -353,7 +353,8 @@ button {
 .main-banner {
 	background: var(--dark);
 	text-align: center;
-	padding: 192px 0;
+	/* padding: 192px 0; */
+	padding: 112px 0;
 }
 
 .banner-bgimage {
@@ -363,17 +364,20 @@ button {
 	background-position: center top;
 	background-repeat: no-repeat;
 	max-width: 1440px;
-	height: 600px;
+	/* height: 600px; */
 	margin: 0 auto;
 }
 
 .main-banner-slogan {
+	max-width: 318px;
 	font-weight: 700;
-	font-size: 56px;
-	line-height: 1.07;
+	font-size: 36px;
+	line-height: 1.1;
 	color: var(--white);
-	width: 492px;
-	margin: 0 auto 48px auto;
+	/* margin: 0 auto 72px auto; */
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 72px;
 }
 
 .main-banner-btn {
@@ -397,6 +401,25 @@ button {
 	background-color: #404bbf;
 }
 
+@media screen and (min-width: 768px) {
+	.main-banner-slogan {
+		max-width: 496px;
+		font-size: 56px;
+		line-height: 1.07;
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.main-banner {
+		padding-top: 188px;
+		padding-bottom: 187px;
+	}
+	.main-banner-slogan {
+		margin-bottom: 48px;
+	}
+}
+/*------------------- ХОВАНКА ----------------*/
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -410,6 +433,7 @@ button {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+/*------------------- ХОВАНКА ----------------*/
 
 .features-list,
 .activities-list,
