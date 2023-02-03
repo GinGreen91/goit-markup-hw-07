@@ -18,6 +18,7 @@
 		<title>Studio</title>
 	</head>
 	<body>
+		<!----- хедер початок ----->
 		<header class="header">
 			<div class="container header-container">
 				<a href="index.html" class="header-logo">
@@ -25,6 +26,11 @@
 					STUDIO
 				</a>
 				<nav class="header-navigation">
+					<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+						<svg class="icon" width="32" height="22">
+							<use href="./image/icons.svg#icon-hamburger"></use>
+						</svg>
+					</button>
 					<ul class="header-navigation-list">
 						<li class="header-navigation-item">
 							<a class="header-navigation-link current" href="./index.html">Studio</a>
@@ -41,14 +47,18 @@
 				</div>
 			</div>
 		</header>
+		<!----- хедер кінець ----->
 		<main>
-			<section class="main-banner banner-bgimage">
+			<!----- головне зображення початок ----->
+			<!-- <section class="main-banner banner-bgimage">
 				<div class="container">
 					<h1 class="main-banner-slogan">Effective Solutions for Your Business</h1>
 					<button class="main-banner-btn" type="button" data-modal-open>Order Service</button>
 				</div>
-			</section>
-			<section class="section-features section">
+			</section> -->
+			<!----- головне зображення кінець ----->
+			<!----- секція функції початок ----->
+			<!-- <section class="section-features section">
 				<div class="container">
 					<h2 class="visually-hidden">Features</h2>
 					<ul class="features-list">
@@ -98,8 +108,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
-			<section class="section-activities section">
+			</section> -->
+			<!----- секція функції кінець ----->
+			<!----- секція активність початок ----->
+			<!-- <section class="section-activities section">
 				<div class="container">
 					<h2 class="activities-title">What Are We Doing</h2>
 					<ul class="activities-list">
@@ -114,8 +126,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
-			<section class="section-team section">
+			</section> -->
+			<!----- секція активність кінець ----->
+			<!----- секція команда початок ----->
+			<!-- <section class="section-team section">
 				<div class="container">
 					<h2 class="team-title">Our Team</h2>
 					<ul class="team-list">
@@ -269,8 +283,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
-			<section class="section-customers section">
+			</section> -->
+			<!----- секція команда кінець ----->
+			<!----- секція клієнти початок ----->
+			<!-- <section class="section-customers section">
 				<div class="container">
 					<h2 class="customers-title">Customers</h2>
 					<ul class="customers-list">
@@ -318,9 +334,11 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
+			<!----- секція клієнти кінець ----->
 		</main>
-		<footer class="footer">
+		<!------- футер початок ------>
+		<!-- <footer class="footer">
 			<div class="footer-container container">
 				<div class="fotter-logo-container">
 					<a href="index.html" class="fotter-logo">
@@ -377,7 +395,59 @@
 					</form>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
+		<!------- футер кінець ------>
+		<!-- мобільне меню початок -->
+		<div class="mobile-menu js-menu-container" id="mobile-menu">
+			<button class="mobile-menu-toggle close-btn js-close-menu">
+				<svg class="icon" width="8" height="8">
+					<use href="./image/icons.svg#icon-closer"></use>
+				</svg>
+			</button>
+			<div class="mobile-menu-content">
+				<ul class="mobile-menu-list">
+					<li class="mobile-menu-item"><a class="mobile-menu-link current" href="./index.html">Studio</a></li>
+					<li class="mobile-menu-item"><a class="mobile-menu-link" href="./portfolio.html">Portfolio</a></li>
+					<li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Contacts</a></li>
+				</ul>
+				<div class="mobile-menu-contacts">
+					<a class="mobile-menu-contacts-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+					<a class="mobile-menu-contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+					<ul class="mobile-menu-social-links">
+						<li class="mobile-menu-link-item">
+							<a href="#" rel="noreferrer nofollow" target="_blank">
+								<svg class="icon" width="16" height="16">
+									<use href="./image/icons.svg#icon-instagram_icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="mobile-menu-link-item">
+							<a href="#" rel="noreferrer nofollow" target="_blank">
+								<svg class="icon" width="16" height="16">
+									<use href="./image/icons.svg#icon-twitter_icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="mobile-menu-link-item">
+							<a href="#" rel="noreferrer nofollow" target="_blank">
+								<svg class="icon" width="16" height="16">
+									<use href="./image/icons.svg#icon-facebook_icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="mobile-menu-link-item">
+							<a href="#" rel="noreferrer nofollow" target="_blank">
+								<svg class="icon" width="16" height="16">
+									<use href="./image/icons.svg#icon-linkedin_icon"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- мобільне меню кінець-->
+		<!-- вікно бекдроп початок -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="modal-close-btn" data-modal-close>
@@ -432,7 +502,13 @@
 						<span class="lable-text text-area">Comment</span>
 						<textarea class="modal-textarea-form" name="user-message" placeholder="Text input"></textarea>
 					</label>
-					<input id="user-policy" type="checkbox" name="user-policy" value="accept" class="check-form visually-hidden" />
+					<input
+						id="user-policy"
+						type="checkbox"
+						name="user-policy"
+						value="accept"
+						class="check-form visually-hidden"
+					/>
 					<label for="user-policy" class="checkbox-form">
 						I accept the terms and conditions of the&nbsp;
 						<a class="privacy-policy-link" href="#">Privacy Policy</a>
@@ -441,6 +517,8 @@
 				</form>
 			</div>
 		</div>
+		<!-- вікно бекдроп кінець -->
+		<script defer src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
