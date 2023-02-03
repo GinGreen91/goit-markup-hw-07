@@ -139,9 +139,10 @@ button {
 
 .header-contacts {
 	display: none;
-	gap: 40px;
+	/* gap: 40px; */
 	margin-left: auto;
-	padding: 24px 0 28px;
+	justify-content: center;
+	/* padding: 24px 0 28px; */
 }
 .header-contacts-link {
 	font-size: 16px;
@@ -327,6 +328,9 @@ button {
 	}
 	.header-contacts {
 		display: flex;
+		flex-direction: column;
+
+		gap: 4px;
 	}
 	.menu-toggle {
 		display: none;
@@ -335,7 +339,12 @@ button {
 
 @media screen and (min-width: 1200px) {
 	.container {
-        max-width: 1128px;
+		max-width: 1128px;
+	}
+	.header-contacts {
+        flex-direction: row;
+        gap: 40px;
+		padding: 24px 0 28px;
     }
 }
 
