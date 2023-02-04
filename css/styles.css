@@ -48,7 +48,6 @@ img {
 } */
 
 .section {
-	/* padding: 120px 0; */
 	padding: 96px 0;
 }
 
@@ -87,6 +86,9 @@ button {
 @media screen and (min-width: 1200px) {
 	.container {
 		max-width: 1128px;
+	}
+	.section {
+		padding: 120px 0;
 	}
 
 	.section {
@@ -419,7 +421,7 @@ button {
 @media screen and (min-width: 1200px) {
 	.main-banner {
 		padding-top: 188px;
-		padding-bottom: 187px;
+		padding-bottom: 188px;
 	}
 	.main-banner-slogan {
 		margin-bottom: 48px;
@@ -666,8 +668,9 @@ button {
 .project-list {
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: 24px;
-	row-gap: 48px;
+	/* column-gap: 24px;
+	row-gap: 48px; */
+	gap: 74px 24px;
 }
 
 .project-link {
@@ -685,7 +688,7 @@ button {
 	justify-content: center;
 }
 .project-item {
-	width: 360px;
+	width: 356px;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -942,6 +945,8 @@ button {
 }
 /*------------------MODAL WINDOW------------------*/
 
+/* modal */
+
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -957,6 +962,7 @@ button {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+
 	transform: translate(-50%, -50%);
 	width: 392px;
 
@@ -1001,17 +1007,11 @@ button {
 	visibility: hidden;
 	pointer-events: none;
 }
-@media screen and (max-width: 767px) {
-	.modal {
-		/* max-width: 392px;
-		min-width: 288px; */
-	}
-	.backdrop {
-		/* padding-left: 16px;
-		padding-right: 16px;
-		padding-top: 96px; */
-	}
+
+.modal-open {
+	/* overflow: hidden; */
 }
+
 /*------------------MODAL FORM------------------*/
 .contact-form {
 	display: flex;
