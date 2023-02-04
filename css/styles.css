@@ -465,8 +465,9 @@ button {
 	gap: 72px 24px;
 	max-width: 100%;
 }
-
+/* -------секція активність------- */
 .section-activities {
+	display: none;
 	padding-top: 0;
 }
 
@@ -479,7 +480,7 @@ button {
 .activities-item {
 	width: calc((100% - 48) / 3);
 }
-
+/* -------секція активність------- */
 .features-subtitle,
 .team-member-name {
 	font-weight: 700;
@@ -496,8 +497,32 @@ button {
 	text-align: center;
 }
 .features-item {
-	/* width: 264px; */
 	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.features-item {
+		max-width: 356px;
+	}
+	.features-subtitle {
+		text-align: inherit;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.features-item {
+		width: 264px;
+		gap: 24px;
+	}
+	.features-image {
+		display: flex;
+	}
+	.features-subtitle {
+		margin-top: 8px;
+	}
+	.section-activities {
+		display: flex;
+	}
 }
 
 .subtitle-description,
