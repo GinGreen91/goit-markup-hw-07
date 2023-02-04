@@ -241,16 +241,20 @@ button {
 	flex-direction: column;
 	height: 100%;
 	width: 100%;
-	padding: 64px 40px 40px;
+	padding: 80px 40px 40px;
 }
 
 .mobile-menu-contacts {
+	display: flex;
+	flex-direction: column;
 	margin-top: auto;
 }
 
 .mobile-menu-social-links {
 	display: flex;
-	gap: 56px;
+	gap: calc((100% - 160px) / 3);
+	max-width: 328px;
+	/* gap: 56px; */
 }
 
 .mobile-menu-contacts-phone {
@@ -293,7 +297,7 @@ button {
 	}
 } */
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
 	.mobile-menu-list {
 		margin-bottom: 40px;
 	}
@@ -318,7 +322,7 @@ button {
 	.mobile-menu-contacts-mail {
 		margin-bottom: 24px;
 	}
-}
+} */
 
 @media screen and (min-width: 768px) {
 	.container {
@@ -568,7 +572,7 @@ button {
 
 .section-team {
 	background-color: #f4f4fd;
-	padding-bottom: 110px;
+	padding-bottom: 128px;
 }
 
 .team-list {
@@ -589,14 +593,17 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+	.section-team {
+		padding-bottom: 108px;
+	}
 	.team-list {
 		gap: 62px 24px;
 	}
 }
 
-.section-customers {
+/* .section-customers {
 	padding-top: 130px;
-}
+} */
 .customers-list {
 	display: flex;
 	justify-content: center;
@@ -993,6 +1000,17 @@ button {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
+}
+@media screen and (max-width: 767px) {
+	.modal {
+		/* max-width: 392px;
+		min-width: 288px; */
+	}
+	.backdrop {
+		/* padding-left: 16px;
+		padding-right: 16px;
+		padding-top: 96px; */
+	}
 }
 /*------------------MODAL FORM------------------*/
 .contact-form {
