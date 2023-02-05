@@ -1104,6 +1104,7 @@ button {
 .checkbox-form {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	font-size: 12px;
 	line-height: 1.33;
 	letter-spacing: 0.04em;
@@ -1137,5 +1138,13 @@ button {
 @media screen and (min-width: 768px) {
 	.modal {
 		width: 408px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.modal {
+	
+		max-width: 100%;
+		max-height: 100%;
 	}
 }
