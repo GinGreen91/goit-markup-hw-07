@@ -396,7 +396,7 @@ button {
 		(min-resolution: 2dppx) {
 		.banner-bgimage {
 			background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
-				url("../image/mainpage/mainbaner_image_desctop@2x.png");
+				url("../image/mainpage/mainbaner_image_desctop@2x.jpg");
 		}
 	}
 }
